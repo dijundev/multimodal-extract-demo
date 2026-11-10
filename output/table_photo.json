@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-11-10T14:38:06+08:00",
-    "tool": "multimodal-extract-demo/1.0",
+    "generated_at": "2026-11-10T15:26:39+08:00",
+    "tool": "multimodal-extract-demo/1.1",
     "provider": {
       "base_url": "https://api.deepseek.com",
       "model": "deepseek-flash"
@@ -10,7 +10,12 @@
       "dpi": 150,
       "max_side": 1600,
       "quality": 92,
-      "dry_run": false
+      "dry_run": false,
+      "cache": false
+    },
+    "cache": {
+      "hits": 0,
+      "misses": 0
     },
     "schema_fields": [
       "doc_type",
@@ -24,11 +29,11 @@
     "totals": {
       "files": 3,
       "pages": 4,
-      "elapsed_sec": 10.79,
+      "elapsed_sec": 6.15,
       "usage": {
-        "prompt_tokens": 4639,
-        "completion_tokens": 4131,
-        "total_tokens": 8770
+        "prompt_tokens": 4799,
+        "completion_tokens": 2381,
+        "total_tokens": 7180
       }
     }
   },
@@ -41,13 +46,14 @@
       "data": {
         "doc_type": "采购清单",
         "language": "zh",
-        "summary": "这是一份行政部2026年10月办公用品采购清单，列明5项物品的数量、单价、小计及含税合计金额。",
+        "summary": "这是行政部于 2026 年 11 月 1 日编制的 2026 年 10 月办公用品采购清单，共列出 5 项物品，含税合计 3306.00 元，要求在 2026-11-15 前报销。",
         "key_values": {
           "标题": "2026 年 10 月办公用品采购清单",
           "部门": "行政部",
           "制表人": "陈晓",
           "制表日期": "2026-11-01",
-          "合计": "3306.00",
+          "合计金额": "3306.00",
+          "币种": "元",
           "报销截止日期": "2026-11-15",
           "备注": "以上金额含税，请于 2026-11-15 前报销。"
         },
@@ -100,23 +106,23 @@
             ]
           }
         ],
-        "full_text": "2026 年 10 月办公用品采购清单\n部门：行政部 制表人：陈晓 制表日期：2026-11-01\n序号 物品名称 数量 单价(元) 小计(元)\n1 晨光中性笔 0.5mm 48 2.50 120.00\n2 得力订书机 6 35.00 210.00\n3 兄弟标签打印机 2 760.00 1520.00\n4 3M 双面胶 20 8.80 176.00\n5 碎纸机 5 级保密 1 1280.00 1280.00\n合计：3,306.00 元\n备注：以上金额含税，请于 2026-11-15 前报销。",
+        "full_text": "2026 年 10 月办公用品采购清单\n部门：行政部    制表人：陈晓    制表日期：2026-11-01\n序号\t物品名称\t数量\t单价(元)\t小计(元)\n1\t晨光中性笔 0.5mm\t48\t2.50\t120.00\n2\t得力订书机\t6\t35.00\t210.00\n3\t兄弟标签打印机\t2\t760.00\t1520.00\n4\t3M 双面胶\t20\t8.80\t176.00\n5\t碎纸机 5 级保密\t1\t1280.00\t1280.00\n合计：3,306.00 元\n备注：以上金额含税，请于 2026-11-15 前报销。",
         "notes": ""
       },
       "usage": {
-        "prompt_tokens": 864,
-        "completion_tokens": 1392,
-        "total_tokens": 2256,
+        "prompt_tokens": 904,
+        "completion_tokens": 909,
+        "total_tokens": 1813,
         "prompt_tokens_details": {
-          "cached_tokens": 640
+          "cached_tokens": 0
         },
         "completion_tokens_details": {
-          "reasoning_tokens": 927
+          "reasoning_tokens": 274
         },
-        "prompt_cache_hit_tokens": 640,
-        "prompt_cache_miss_tokens": 224
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 904
       },
-      "elapsed_sec": 8.28
+      "elapsed_sec": 4.26
     }
   ]
 }

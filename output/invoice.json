@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-11-10T14:38:06+08:00",
-    "tool": "multimodal-extract-demo/1.0",
+    "generated_at": "2026-11-10T15:26:39+08:00",
+    "tool": "multimodal-extract-demo/1.1",
     "provider": {
       "base_url": "https://api.deepseek.com",
       "model": "deepseek-flash"
@@ -10,7 +10,12 @@
       "dpi": 150,
       "max_side": 1600,
       "quality": 92,
-      "dry_run": false
+      "dry_run": false,
+      "cache": false
+    },
+    "cache": {
+      "hits": 0,
+      "misses": 0
     },
     "schema_fields": [
       "doc_type",
@@ -24,11 +29,11 @@
     "totals": {
       "files": 3,
       "pages": 4,
-      "elapsed_sec": 10.79,
+      "elapsed_sec": 6.15,
       "usage": {
-        "prompt_tokens": 4639,
-        "completion_tokens": 4131,
-        "total_tokens": 8770
+        "prompt_tokens": 4799,
+        "completion_tokens": 2381,
+        "total_tokens": 7180
       }
     }
   },
@@ -39,9 +44,9 @@
       "image": "900x1180, 125.2 KB",
       "ok": true,
       "data": {
-        "doc_type": "发票",
+        "doc_type": "电子发票（普通发票）",
         "language": "zh",
-        "summary": "本页是一张电子普通发票，记录了购买方、销售方、商品明细及价税合计等信息。",
+        "summary": "深圳市云栈科技有限公司向广州启明办公用品有限公司开具的电子普通发票，价税合计4028.00元。",
         "key_values": {
           "发票代码": "044001900111",
           "发票号码": "24312000000123456789",
@@ -51,8 +56,8 @@
           "购买方地址电话": "深圳市南山区科技园 0755-8888 6666",
           "销售方名称": "广州启明办公用品有限公司",
           "销售方纳税人识别号": "91440101MA9U2ABC7P",
-          "价税合计大写": "肆仟零贰拾捌圆整",
-          "价税合计小写": "4028.00",
+          "价税合计（大写）": "肆仟零贰拾捌圆整",
+          "价税合计（小写）": "4028.00",
           "收款人": "李静",
           "复核": "王强",
           "开票人": "张敏"
@@ -92,23 +97,23 @@
             ]
           }
         ],
-        "full_text": "电子发票（普通发票） 发票代码 044001900111\n发票号码：24312000000123456789 开票日期：2026年11月08日\n购买方 名称：深圳市云栈科技有限公司\n纳税人识别号：91440300MA5F1XYZ2K\n地址电话：深圳市南山区科技园 0755-8888 6666\n销售方 名称：广州启明办公用品有限公司\n纳税人识别号：91440101MA9U2ABC7P\n项目名称 规格型号 数量 单价 金额\nA4 复印纸 70g/500 张 12 28.00 336.00\n人体工学椅 YQ-880 3 899.00 2697.00\n无线键鼠套装 K380+M330 5 199.00 995.00\n价税合计（大写）肆仟零贰拾捌圆整\n（小写）¥4,028.00\n收款人：李静\n复核：王强\n开票人：张敏\n发票专用章",
-        "notes": ""
+        "full_text": "电子发票（普通发票）\n发票代码 044001900111\n发票号码：24312000000123456789\n开票日期：2026年11月08日\n购买方\n名称：深圳市云栈科技有限公司\n纳税人识别号：91440300MA5F1XYZ2K\n地址电话：深圳市南山区科技园 0755-8888 6666\n销售方\n名称：广州启明办公用品有限公司\n纳税人识别号：91440101MA9U2ABC7P\n项目名称 规格型号 数量 单价 金额\nA4 复印纸 70g/500 张 12 28.00 336.00\n人体工学椅 YQ-880 3 899.00 2697.00\n无线键鼠套装 K380+M330 5 199.00 995.00\n价税合计（大写）肆仟零贰拾捌圆整\n（小写）¥4,028.00\n收款人：李静\n复核：王强\n开票人：张敏\n发票专用章",
+        "notes": "销售方地址电话、开户行及账号未在票面显示；表格中未单列税率与税额；印章为“发票专用章”，具体盖章单位名称无法确认。"
       },
       "usage": {
-        "prompt_tokens": 1037,
-        "completion_tokens": 1866,
-        "total_tokens": 2903,
+        "prompt_tokens": 1077,
+        "completion_tokens": 702,
+        "total_tokens": 1779,
         "prompt_tokens_details": {
-          "cached_tokens": 896
+          "cached_tokens": 0
         },
         "completion_tokens_details": {
-          "reasoning_tokens": 1223
+          "reasoning_tokens": 7
         },
-        "prompt_cache_hit_tokens": 896,
-        "prompt_cache_miss_tokens": 141
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1077
       },
-      "elapsed_sec": 10.66
+      "elapsed_sec": 3.64
     }
   ]
 }

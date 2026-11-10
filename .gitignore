@@ -6,6 +6,10 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+.pytest_cache/
+
+# 提取结果缓存（本地跑出来的，没必要进仓库）
+.cache/
 
 # dry-run 的临时报告
 output/dryrun_report.json
