@@ -10,15 +10,15 @@
 
 发票（900×1180 的 PNG）：
 
-![发票](figures/01_invoice.png)
+<img src="https://cdn.jsdelivr.net/gh/dijundev/multimodal-extract-demo@main/figures/01_invoice.png" alt="发票样例">
 
 用手机拍歪的表格照片，转了 1.6 度，加了点噪点：
 
-![表格](figures/02_table_photo.png)
+<img src="https://cdn.jsdelivr.net/gh/dijundev/multimodal-extract-demo@main/figures/02_table_photo.png" alt="表格样例">
 
 两页的 PDF，脚本内部按 150 dpi 渲染成图再送去识别：
 
-![合同](figures/03_contract_p1.png)
+<img src="https://cdn.jsdelivr.net/gh/dijundev/multimodal-extract-demo@main/figures/03_contract_p1.png" alt="合同样例">
 
 ## 怎么跑
 
@@ -158,3 +158,5 @@ EXTRACT_MODEL=qwen-vl-plus
 ```
 
 `samples/` 里的发票和合同是我用 PIL 画的假数据，公司名、税号都是编的，可以放心用。
+
+README 里那几个图用的是 jsDelivr 直链，不是相对路径。原因：Gitee 不渲染相对路径的图片，而直接从 GitHub 页面引 Gitee 的 raw 链接会被防盗链拦成 403，只有 CDN 这种两边都认。
