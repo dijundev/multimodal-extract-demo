@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "generated_at": "2026-11-10T14:38:06+08:00",
+    "tool": "multimodal-extract-demo/1.0",
+    "provider": {
+      "base_url": "https://api.deepseek.com",
+      "model": "deepseek-flash"
+    },
+    "settings": {
+      "dpi": 150,
+      "max_side": 1600,
+      "quality": 92,
+      "dry_run": false
+    },
+    "schema_fields": [
+      "doc_type",
+      "language",
+      "summary",
+      "key_values",
+      "tables",
+      "full_text",
+      "notes"
+    ],
+    "totals": {
+      "files": 3,
+      "pages": 4,
+      "elapsed_sec": 10.79,
+      "usage": {
+        "prompt_tokens": 4639,
+        "completion_tokens": 4131,
+        "total_tokens": 8770
+      }
+    }
+  },
+  "file": "C:\\Users\\admin\\Desktop\\multimodal_extract_demo\\samples\\table_photo.jpg",
+  "pages": [
+    {
+      "page": 1,
+      "image": "1022x788, 55.8 KB",
+      "ok": true,
+      "data": {
+        "doc_type": "采购清单",
+        "language": "zh",
+        "summary": "这是一份行政部2026年10月办公用品采购清单，列明5项物品的数量、单价、小计及含税合计金额。",
+        "key_values": {
+          "标题": "2026 年 10 月办公用品采购清单",
+          "部门": "行政部",
+          "制表人": "陈晓",
+          "制表日期": "2026-11-01",
+          "合计": "3306.00",
+          "报销截止日期": "2026-11-15",
+          "备注": "以上金额含税，请于 2026-11-15 前报销。"
+        },
+        "tables": [
+          {
+            "title": "2026 年 10 月办公用品采购清单",
+            "headers": [
+              "序号",
+              "物品名称",
+              "数量",
+              "单价(元)",
+              "小计(元)"
+            ],
+            "rows": [
+              [
+                "1",
+                "晨光中性笔 0.5mm",
+                "48",
+                "2.50",
+                "120.00"
+              ],
+              [
+                "2",
+                "得力订书机",
+                "6",
+                "35.00",
+                "210.00"
+              ],
+              [
+                "3",
+                "兄弟标签打印机",
+                "2",
+                "760.00",
+                "1520.00"
+              ],
+              [
+                "4",
+                "3M 双面胶",
+                "20",
+                "8.80",
+                "176.00"
+              ],
+              [
+                "5",
+                "碎纸机 5 级保密",
+                "1",
+                "1280.00",
+                "1280.00"
+              ]
+            ]
+          }
+        ],
+        "full_text": "2026 年 10 月办公用品采购清单\n部门：行政部 制表人：陈晓 制表日期：2026-11-01\n序号 物品名称 数量 单价(元) 小计(元)\n1 晨光中性笔 0.5mm 48 2.50 120.00\n2 得力订书机 6 35.00 210.00\n3 兄弟标签打印机 2 760.00 1520.00\n4 3M 双面胶 20 8.80 176.00\n5 碎纸机 5 级保密 1 1280.00 1280.00\n合计：3,306.00 元\n备注：以上金额含税，请于 2026-11-15 前报销。",
+        "notes": ""
+      },
+      "usage": {
+        "prompt_tokens": 864,
+        "completion_tokens": 1392,
+        "total_tokens": 2256,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 927
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 224
+      },
+      "elapsed_sec": 8.28
+    }
+  ]
+}

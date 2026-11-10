@@ -1,0 +1,18 @@
+{
+  "doc_type": "文档类型，固定填 发票",
+  "invoice_no": "发票号码",
+  "issue_date": "开票日期，格式 YYYY-MM-DD",
+  "buyer": "购买方名称",
+  "seller": "销售方名称",
+  "total_amount": "价税合计小写金额，只要数字，两位小数",
+  "total_in_words": "价税合计大写",
+  "items": [
+    {
+      "name": "项目名称",
+      "spec": "规格型号",
+      "qty": "数量",
+      "unit_price": "单价",
+      "amount": "金额"
+    }
+  ]
+}

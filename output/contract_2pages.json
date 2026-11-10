@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "generated_at": "2026-11-10T14:38:06+08:00",
+    "tool": "multimodal-extract-demo/1.0",
+    "provider": {
+      "base_url": "https://api.deepseek.com",
+      "model": "deepseek-flash"
+    },
+    "settings": {
+      "dpi": 150,
+      "max_side": 1600,
+      "quality": 92,
+      "dry_run": false
+    },
+    "schema_fields": [
+      "doc_type",
+      "language",
+      "summary",
+      "key_values",
+      "tables",
+      "full_text",
+      "notes"
+    ],
+    "totals": {
+      "files": 3,
+      "pages": 4,
+      "elapsed_sec": 10.79,
+      "usage": {
+        "prompt_tokens": 4639,
+        "completion_tokens": 4131,
+        "total_tokens": 8770
+      }
+    }
+  },
+  "file": "C:\\Users\\admin\\Desktop\\multimodal_extract_demo\\samples\\contract_2pages.pdf",
+  "pages": [
+    {
+      "page": 1,
+      "image": "1240x1754 -> 1131x1600, 94.5 KB",
+      "ok": true,
+      "data": {
+        "doc_type": "合同",
+        "language": "zh",
+        "summary": "深圳市云栈科技有限公司作为出租方与深圳市南屿设计工作室签订的房屋租赁合同，约定租赁南山区科技园科苑路8号3栋502室，租期两年及相关租金条款。",
+        "key_values": {
+          "合同名称": "房屋租赁合同",
+          "甲方（出租方）": "深圳市云栈科技有限公司",
+          "乙方（承租方）": "深圳市南屿设计工作室",
+          "租赁物": "深圳市南山区科技园科苑路8号3栋502室",
+          "建筑面积": "186.5 平方米",
+          "租赁期限": "自2026年12月1日起至2028年11月30日止",
+          "月租金": "32000.00",
+          "租金大写": "叁万贰仟圆整",
+          "押金": "64000.00",
+          "押金说明": "两个月租金",
+          "付款方式": "每月5日前支付当月租金至甲方账户",
+          "物业费、水电费": "由乙方按实际用量承担",
+          "页码": "第 1 页 / 共 2 页"
+        },
+        "tables": [],
+        "full_text": "房屋租赁合同\n\n甲方（出租方）：深圳市云栈科技有限公司\n\n乙方（承租方）：深圳市南屿设计工作室\n\n第一条 租赁物：深圳市南山区科技园科苑路8号3栋502室，\n\n建筑面积186.5平方米。\n\n第二条 租赁期限：自2026年12月1日起至2028年11月30日止。\n\n第三条 租金：每月人民币32,000元（大写：叁万贰仟圆整），\n\n押金两个月共计64,000元。\n\n第四条 付款方式：乙方应于每月5日前支付当月租金至甲方账户。\n\n第五条 物业费、水电费由乙方按实际用量承担。\n\n第 1 页 / 共 2 页",
+        "notes": "本页为合同第1页，共2页，后续条款及签署信息未在本页显示。"
+      },
+      "usage": {
+        "prompt_tokens": 1369,
+        "completion_tokens": 423,
+        "total_tokens": 1792,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 217
+      },
+      "elapsed_sec": 3.03
+    },
+    {
+      "page": 2,
+      "image": "1240x1754 -> 1131x1600, 99.7 KB",
+      "ok": true,
+      "data": {
+        "doc_type": "合同",
+        "language": "zh",
+        "summary": "这是一份房屋租赁合同的第二页，约定违约责任、争议解决方式及其他约定，并由甲乙双方盖章签署。",
+        "key_values": {
+          "条款": "第六条 违约责任与争议解决；第七条 其他约定",
+          "违约金约定": "甲方未按约定交付房屋的，应向乙方支付一个月租金作为违约金",
+          "解除条件": "乙方逾期支付租金超过15日的，甲方有权解除本合同，并没收全部押金",
+          "争议解决": "协商解决；协商不成的，提交深圳国际仲裁院仲裁",
+          "合同份数": "一式两份，甲乙双方各执一份，自双方签字盖章之日起生效",
+          "甲方": "云栈科技有限公司（盖章）",
+          "乙方": null,
+          "甲方日期": "2026-11-10",
+          "乙方日期": "2026-11-10",
+          "页码": "第2页/共2页"
+        },
+        "tables": [],
+        "full_text": "第六条 违约责任与争议解决\n\n1. 乙方逾期支付租金超过 15 日的，甲方有权解除本合同，并没收全部押金。\n2. 甲方未按约定交付房屋的，应向乙方支付一个月租金作为违约金。\n3. 因本合同引起的争议，双方应协商解决；协商不成的，提交深圳国际仲裁院仲裁。\n\n第七条 其他约定\n本合同一式两份，甲乙双方各执一份，自双方签字盖章之日起生效。\n\n甲方（盖章）：\n（印章：云栈科技有限公司）\n\n乙方（盖章）：\n\n日期：2026 年 11 月 10 日\n\n日期：2026 年 11 月 10 日\n\n第 2 页 / 共 2 页",
+        "notes": "乙方盖章处为空，未见乙方印章或名称；印章内文字“云栈科技有限公司”部分与盖章文字重叠，辨认可能有偏差。"
+      },
+      "usage": {
+        "prompt_tokens": 1369,
+        "completion_tokens": 450,
+        "total_tokens": 1819,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 9
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 217
+      },
+      "elapsed_sec": 3.46
+    }
+  ]
+}

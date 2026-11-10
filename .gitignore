@@ -1,0 +1,16 @@
+# 自己的 key，别提交
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# dry-run 的临时报告
+output/dryrun_report.json
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
