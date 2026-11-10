@@ -10,15 +10,15 @@
 
 发票（900×1180 的 PNG）：
 
-<img src="https://cdn.jsdelivr.net/gh/dijundev/multimodal-extract-demo@main/figures/01_invoice.png" alt="发票样例">
+![发票样例](https://cdn.jsdelivr.net/gh/dijundev/multimodal-extract-demo@main/figures/01_invoice.png)
 
 用手机拍歪的表格照片，转了 1.6 度，加了点噪点：
 
-<img src="https://cdn.jsdelivr.net/gh/dijundev/multimodal-extract-demo@main/figures/02_table_photo.png" alt="表格样例">
+![表格样例](https://cdn.jsdelivr.net/gh/dijundev/multimodal-extract-demo@main/figures/02_table_photo.png)
 
 两页的 PDF，脚本内部按 150 dpi 渲染成图再送去识别：
 
-<img src="https://cdn.jsdelivr.net/gh/dijundev/multimodal-extract-demo@main/figures/03_contract_p1.png" alt="合同样例">
+![合同样例](https://cdn.jsdelivr.net/gh/dijundev/multimodal-extract-demo@main/figures/03_contract_p1.png)
 
 ## 怎么跑
 
