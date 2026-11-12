@@ -215,6 +215,8 @@ EXTRACT_MODEL=qwen-vl-plus
 .
 ├─ extract_demo.py              主脚本，单文件
 ├─ verify.py                    结果自检：列数、单价、合计、日期
+├─ tools/make_samples.py        画 samples/ 里那三份假数据
+├─ tools/make_figures.py        生成上面那三张对比图（要先跑过主脚本）
 ├─ run.bat                      Windows 双击启动
 ├─ .env.example                 配置模板，复制成 .env 再填
 ├─ requirements.txt             pillow、pymupdf、openpyxl
@@ -227,7 +229,7 @@ EXTRACT_MODEL=qwen-vl-plus
 └─ figures/                     README 里的对比图
 ```
 
-`samples/` 里的发票和合同是我用 PIL 画的假数据，公司名、税号都是编的，可以放心用。
+`samples/` 里的发票和合同是我用 PIL 画的假数据，公司名、税号都是编的，可以放心用。上面那三张对比图也不是截图，是 `tools/make_figures.py` 从 `output/extract_all.json` 拼出来的——换了样例重跑一遍就行。
 
 README 里那几个图用的是 jsDelivr 直链，不是相对路径。原因：Gitee 不渲染相对路径的图片，而直接从 GitHub 页面引 Gitee 的 raw 链接会被防盗链拦成 403，只有 CDN 这种两边都认。
 
